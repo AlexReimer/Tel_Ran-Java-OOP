@@ -1,4 +1,8 @@
 public class Swan {
+    /*Создать класс лебедь - Swan. И несколько его экземпляров.
+    Чем различаются ваши лебеди? Какие у них атрибуты? Какие методы?
+     */
+
     String color;
     boolean migrant;
     int age = 0;
@@ -20,6 +24,9 @@ public class Swan {
 
     }
 
+}
+
+class swanMigrants {
     public static void main(String[] args) {
         Swan groupOne = new Swan();
         Swan groupTwo = new Swan();
@@ -47,5 +54,4 @@ public class Swan {
         groupThree.healthy = true;
         groupThree.swanGroupInfoOutput();
     }
-
 }
