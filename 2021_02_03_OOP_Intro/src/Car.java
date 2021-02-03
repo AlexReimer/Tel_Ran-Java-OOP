@@ -14,8 +14,12 @@ public class Car {
         mileAge += distance;
     }
 
+    public void recolor (String newColor) {
+        color = newColor;
+    }
+
     public void displayInfo() {
-        System.out.println("Количество колос " + wheels);
+        System.out.println("Количество колес " + wheels);
         System.out.println("Пробег машины " + mileAge);
         System.out.println("Цвет машины " + color);
         System.out.println("Номер двигателя " + carID);
@@ -33,10 +37,16 @@ class TestCar {
         Car toyota = new Car();
         Car porsche = new Car();
 //        System.out.println(porsche.brandName);
-//        System.out.println(car.doors);
-//        System.out.println(porsche.registration);
+        System.out.println(porsche.doors);
+        System.out.println(porsche.registration);
         porsche.move(1200);
 //        System.out.println(porsche.mileAge);
+        porsche.displayInfo();
+        porsche.color = "Yellow";
+        porsche.displayInfo();
+        porsche.recolor("Pink");
+        porsche.displayInfo();
+        porsche.recolor("Green");
         porsche.displayInfo();
     }
 }
