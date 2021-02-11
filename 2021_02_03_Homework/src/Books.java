@@ -23,7 +23,7 @@ public class Books {
         System.out.println("Publisher is : " + publisher);
         System.out.println("First edition of " + title + " has " + copyNumber + " books");
         System.out.println("ISDN is : " + isbn);
-        System.out.println(title + "costs " + price);
+        System.out.println(title + " costs " + price);
         System.out.println("Wir sell " + title + " as a " + format);
         System.out.println("The book " + title + (availible ? " is availible" : " not availible"));
 
