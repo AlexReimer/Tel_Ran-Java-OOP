@@ -28,7 +28,7 @@ public class HW_Exercise {
         //Given an array of ints, return true if it contains no 1’s or it contains no 4’s.
         int[] arr7 = new int[]{1, 2, 4};
         int[] arr8 = new int[]{1, 2, 3, 4};
-        int[] arr9 = new int[]{5, 3, 6};
+        int[] arr9 = new int[]{2, 3, 4};
         System.out.println(no14(arr7));//  → true
         System.out.println(no14(arr8));// → false
         System.out.println(no14(arr9));// → true
