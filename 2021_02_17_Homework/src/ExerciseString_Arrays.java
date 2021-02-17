@@ -44,7 +44,7 @@ public class ExerciseString_Arrays {
     private static String repeatFront(String str, int n) {
         String result = "";
         int i;
-        for (i = n; 0 < i; i--) {
+        for (i = n; i > 0; i--) {
             result += str.substring(0, i);
         }
         return result;
