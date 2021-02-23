@@ -1,6 +1,45 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-.idea
+### JetBrains template
+git config --global core.excludesfile .gitignore
+###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
+
+# read 
+/src/main/resources/application.yml
+
 *.iml
-out
+*.json
+
+.idea/*
+.idea/
+out/
+debug/
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+*.class
+*.jar
+*.war
+*.ear
+*.tmp
+*.exe
+
+thumbs.db
+.DS_Store
+*.log
+
+target/generated-sources/
+target/
+/.classpath
+/.project
+.settings/
+
+
+#x-code
+*.xcodeproj
+
