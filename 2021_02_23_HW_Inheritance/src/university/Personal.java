@@ -41,7 +41,7 @@ public class Personal {
     }
 
     //sort by birthday
-    public int sortByBirthday(int[] bday) {
+    public void sortByBirthday(int[] bday) {
         int count = 1;
         while (count > 0) {
             count = 0;
@@ -54,6 +54,16 @@ public class Personal {
                 }
             }
         }
-        return count;
+        print();
+    }
+
+    //print bubblesort
+    public void print() {
+        System.out.println("Sorted by birthday");
+        for (int i = 0; i < staff; i++) {
+            System.out.println("Person: " + persons[i].getFirstName() + " "
+                    + persons[i].getSecondName() + ". Birthdate: "
+                    + persons[i].getBirthday() + ". " + persons[i].toString());
+        }
     }
 }
