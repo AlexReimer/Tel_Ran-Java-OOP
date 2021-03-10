@@ -7,7 +7,7 @@ public class Book {
 
     public Book() {
         title = "No title";
-        author = "Mo author";
+        author = "No author";
     }
 
     public Book(long isbn, String author, String title, int countPages, double pricePerPage) {
