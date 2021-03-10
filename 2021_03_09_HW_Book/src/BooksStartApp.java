@@ -11,12 +11,34 @@ public class BooksStartApp {
 
         Book[] bookstore = new Book[]{b1, b2, b3, b4, b5, b6};
 
-        Book.printBooks(bookstore);
+        printBooks(bookstore);
 
-      //  Book.getTotalPrice(bookstore);
+        getTotalPrice(bookstore);
 
     }
+
+
+    //print out array of objects in main
+    public static void printBooks(Book[] books) {
+        for (int i = 0; i < books.length; i++) {
+            System.out.println(books[i].toString());
+        }
+    }
+
+
+    // count a book´s price and total price of all books (objects)
+    public static double getTotalPrice(Book[] books, int countPages, double pricePerPage) {
+        double bookPriсe = countPages * pricePerPage;
+        double total = 0.0;
+        for (int i = 0; i < books.length; i++) {
+            total += bookPriсe;
+            System.out.println(books[i].toString());
+        }
+        return total;
+    }
+
 }
+
 
 
 

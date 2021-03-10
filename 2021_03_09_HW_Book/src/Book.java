@@ -10,9 +10,15 @@ public class Book {
     }
 
     public Book(long isbn, String author, String title, int countPages, double pricePerPage) {
+
         this.isbn = isbn;
-        this.author = author;
-        this.title = title;
+
+        setAuthor(author);
+
+        setTitle(title);
+
+//        this.author = author;
+//        this.title = title;
 
         if (countPages > 0 && countPages < 10_000)
             this.countPages = countPages;
@@ -22,24 +28,6 @@ public class Book {
     }
 
 
-    //print out array of objects in main
-    public static void printBooks(Book[] books) {
-        for (int i = 0; i < books.length; i++) {
-            System.out.println(books[i].toString());
-        }
-    }
-
-
-    // count a book´s price and total price of all books (objects)
-    public static double getTotalPrice(Book[] books, int countPages, double pricePerPage) {
-        double bookPriсe = countPages * pricePerPage;
-        double total = 0.0;
-        for (int i = 0; i < books.length; i++) {
-            total += bookPriсe;
-            System.out.println(books[i].toString());
-        }
-        return total;
-    }
 
 
     public long getIsbn() {
@@ -86,7 +74,7 @@ public class Book {
 
     public void setPricePerPage(double pricePerPage) {
         if (pricePerPage == 0)
-            System.out.println("Fill in this field <pricePerPage>");
+            System.out.println("Fill in the field <pricePerPage>");
         this.pricePerPage = pricePerPage;
     }
 
