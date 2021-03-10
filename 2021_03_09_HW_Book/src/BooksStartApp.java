@@ -13,7 +13,7 @@ public class BooksStartApp {
 
         printBooks(bookstore);
 
-        getTotalPrice(bookstore);
+       getTotalPrice(bookstore);
 
     }
 

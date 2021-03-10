@@ -7,11 +7,13 @@ public class Book {
 
     public Book() {
         title = "No title";
+        author = "Mo author";
     }
 
     public Book(long isbn, String author, String title, int countPages, double pricePerPage) {
 
-        this.isbn = isbn;
+        setIsbn(isbn);
+//        this.isbn = isbn;
 
         setAuthor(author);
 
@@ -28,13 +30,13 @@ public class Book {
     }
 
 
-
-
     public long getIsbn() {
         return isbn;
     }
 
     public void setIsbn(long isbn) {
+        if (isbn == 0)
+            System.out.println("Fill in the field <isbn>");
         this.isbn = isbn;
     }
 
