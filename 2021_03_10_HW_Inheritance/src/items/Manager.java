@@ -1,11 +1,10 @@
 package items;
 
 public class Manager extends Employee{
-    private int grade;
+  int grade;
 
-
-    public Manager(String company, double baseSalary, int grade) {
-        super(company, baseSalary);
+    public Manager(String name, int age, String company, double baseSalary, int grade) {
+        super(name, age, company, baseSalary);
         this.grade=grade;
     }
 
@@ -22,7 +21,11 @@ public class Manager extends Employee{
     @Override
     public String toString() {
         return "Manager{" +
-                "grade=" + grade +
+                "name: '" + name + '\'' +
+                ", age: " + age +
+                ", company: " + company + '\'' +
+                ", baseSalary= " + baseSalary +
+                ", grade=" + grade +
                 '}';
     }
 }

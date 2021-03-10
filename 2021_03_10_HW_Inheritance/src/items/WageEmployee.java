@@ -1,16 +1,15 @@
 package items;
 
 public class WageEmployee extends Employee {
-    private int hours;
-    private double wage;
+    int hours;
+    double wage;
 
- //   public WageEmployee (){}
-
-    public WageEmployee(String company, double baseSalary, int hours, double wage) {
-        super(company, baseSalary);
+    public WageEmployee(String name, int age, String company, double baseSalary, int hours, double wage) {
+        super(name, age, company, baseSalary);
         this.hours = hours;
         this.wage = wage;
     }
+
 
     public int getHours() {
         return hours;
@@ -31,7 +30,11 @@ public class WageEmployee extends Employee {
     @Override
     public String toString() {
         return "WageEmployee{" +
-                "hours=" + hours +
+                "name: '" + name + '\'' +
+                ", age: " + age +
+                ", company: " + company + '\'' +
+                ", baseSalary= " + baseSalary +
+                ", hours=" + hours +
                 ", wage=" + wage +
                 '}';
     }

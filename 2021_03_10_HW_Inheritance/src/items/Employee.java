@@ -4,7 +4,8 @@ public class Employee extends Person {
    String company;
    double baseSalary;
 
-    public Employee(String company, double baseSalary) {
+    public Employee(String name, int age,  String company, double baseSalary) {
+        super (name, age);
         this.company = company;
         this.baseSalary = baseSalary;
     }
@@ -27,7 +28,9 @@ public class Employee extends Person {
 
     @Override
     public String toString() {
-        return "items.Employee{" +
+        return "Employee{" +
+                " name='" + name + '\'' +
+                ", age=" + age +
                 "company='" + company + '\'' +
                 ", baseSalary=" + baseSalary +
                 '}';

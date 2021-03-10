@@ -30,7 +30,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "items.Person{" +
+        return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
