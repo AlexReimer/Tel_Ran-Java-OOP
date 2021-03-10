@@ -66,7 +66,7 @@ public class Book {
 
     public void setCountPages(int countPages) {
         if (countPages == 0)
-            System.out.println("Count pages and fill in field <countPages>");
+            System.out.println("Count pages and fill in the field <countPages>");
         this.countPages = countPages;
     }
 
