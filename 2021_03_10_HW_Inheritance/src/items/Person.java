@@ -5,11 +5,17 @@ public class Person {
     int age;
 
     public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
+        if (name!=null&&!name.trim().isEmpty())
+            this.name = name;
+        else
+            this.name = "No name";
+
+        setAge(age);
     }
 
     public Person() {
+        name = "No mane";
+
     }
 
     public String getName() {
@@ -17,7 +23,10 @@ public class Person {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name!=null&&!name.trim().isEmpty())
+            this.name = name;
+        else
+            System.out.println("Wrong name");
     }
 
     public int getAge() {
@@ -25,7 +34,10 @@ public class Person {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age>18 && age <70)
+            this.age = age;
+        else
+            System.out.println("Wrong age");
     }
 
     @Override

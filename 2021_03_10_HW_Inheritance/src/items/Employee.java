@@ -6,8 +6,12 @@ public class Employee extends Person {
 
     public Employee(String name, int age,  String company, double baseSalary) {
         super (name, age);
-        this.company = company;
-        this.baseSalary = baseSalary;
+        if (company!=null&&!company.trim().isEmpty())
+            this.company = company;
+        else
+            System.out.println("Wrong company");
+
+        setBaseSalary(baseSalary);
     }
 
     public String getCompany() {
@@ -23,7 +27,11 @@ public class Employee extends Person {
     }
 
     public void setBaseSalary(double baseSalary) {
-        this.baseSalary = baseSalary;
+        if (baseSalary>300&&baseSalary<10_000)
+             this.baseSalary = baseSalary;
+        else
+            System.out.println("Wrong base salary");
+
     }
 
     @Override
