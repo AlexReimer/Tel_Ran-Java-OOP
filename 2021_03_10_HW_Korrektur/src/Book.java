@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Book {
     private long isbn;
     private String author;
@@ -101,4 +103,13 @@ public class Book {
                 ", pricePerPage=" + pricePerPage +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return isbn == book.isbn && countPages == book.countPages && Double.compare(book.pricePerPage, pricePerPage) == 0 && author.equals(book.author) && title.equals(book.title);
+    }
+
 }

@@ -6,12 +6,15 @@ public class Employee extends Person {
 
     public Employee(String name, int age,  String company, double baseSalary) {
         super (name, age);
-        if (company!=null&&!company.trim().isEmpty())
+        if (company!=null)
             this.company = company;
         else
-            System.out.println("Wrong company");
+            System.out.println("Not defined");
 
         setBaseSalary(baseSalary);
+    }
+
+    public Employee (){
     }
 
     public String getCompany() {

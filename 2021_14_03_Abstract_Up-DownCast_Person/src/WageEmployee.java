@@ -1,14 +1,11 @@
-package items;
-
 public class WageEmployee extends Employee {
     int hours;
     double wage;
 
-    public WageEmployee(String name, int age, String company, double baseSalary, int hours, double wage) {
-        super(name, age, company, baseSalary);
+    public WageEmployee(String name, int age, long id, String company, double baseSalary, int hours, double wage) {
+        super(name, age, id, company, baseSalary);
 
         setHours(hours);
-
         setWage(wage);
     }
 
@@ -18,7 +15,7 @@ public class WageEmployee extends Employee {
     }
 
     public void setHours(int hours) {
-        if (hours >0)
+        if (hours > 0)
             this.hours = hours;
         System.out.println("Wrong hours");
     }
@@ -28,17 +25,23 @@ public class WageEmployee extends Employee {
     }
 
     public void setWage(double wage) {
-        if (wage >= 9 && hours >= 50)
+        if (wage > 0)
             this.wage = wage;
         else
             System.out.println("Wrong wage");
     }
 
     @Override
+    public double calcSalary() {
+        return hours * wage + baseSalary;
+    }
+
+    @Override
     public String toString() {
         return "WageEmployee{" +
-                "name: '" + name + '\'' +
+                "name: " + name + '\'' +
                 ", age: " + age +
+                ", id= " + id +
                 ", company: " + company + '\'' +
                 ", baseSalary= " + baseSalary +
                 ", hours=" + hours +
