@@ -21,32 +21,32 @@ public class CarAppl {
         };
         displayCars(cars);
         System.out.println("__________");
-        System.out.println("Sort by model: ");
+        System.out.println("Sorted by model: ");
         Arrays.sort(cars);
         displayCars(cars);
 
         System.out.println("__________");
-        System.out.println("Sort by year: ");
+        System.out.println("Sorted by year: ");
         Arrays.sort(cars, new ComparatorByYear());
         displayCars(cars);
 
         System.out.println("__________");
-        System.out.println("Sort by colour: ");
+        System.out.println("Sorted by colour: ");
         Arrays.sort(cars, new ComparatorByColour());
         displayCars(cars);
 
         System.out.println("__________");
-        System.out.println("Sort by engine: ");
+        System.out.println("Sorted by engine: ");
         Arrays.sort(cars, new ComparatorByEngine());
         displayCars(cars);
 
         System.out.println("__________");
-        System.out.println("Sort by price: ");
+        System.out.println("Sorted by price: ");
         Arrays.sort(cars, new ComparatorByPrice());
         displayCars(cars);
 
         System.out.println("__________");
-        System.out.println("Sort by year and price: ");
+        System.out.println("Sorted by year and price: ");
         Arrays.sort(cars, new ComparatorByYearAndPrice());
         displayCars(cars);
     }
