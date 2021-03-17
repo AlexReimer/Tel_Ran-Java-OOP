@@ -60,6 +60,6 @@ public class Journal extends MassMedia implements IPrintable {
 
     @Override
     public void print() {
-        System.out.println("We are print media");
+        System.out.println(toString());
     }
 }

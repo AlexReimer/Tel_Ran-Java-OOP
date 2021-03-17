@@ -49,6 +49,6 @@ public class Newspaper extends MassMedia implements IPrintable {
 
     @Override
     public void print() {
-        System.out.println("We are a print media");
+        System.out.println(toString() );
     }
 }

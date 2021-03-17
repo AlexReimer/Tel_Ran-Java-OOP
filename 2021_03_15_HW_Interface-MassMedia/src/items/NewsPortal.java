@@ -4,7 +4,7 @@ import interfaces.IPrintable;
 
 public class NewsPortal extends MassMedia {
 
-    String url;
+    String url = "undefined";
 
     public NewsPortal(String name, String url) {
         super(name);

@@ -1,9 +1,10 @@
 package items;
 
 public abstract class MassMedia {
-    String name;
+    String name = "undifined";
 
     public MassMedia(String name) {
+
         this.name = name;
     }
 
