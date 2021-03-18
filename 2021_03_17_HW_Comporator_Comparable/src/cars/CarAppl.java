@@ -3,7 +3,6 @@ package cars;
 import comparators.*;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class CarAppl {
     public static void main(String[] args) {
@@ -46,8 +45,8 @@ public class CarAppl {
         displayCars(cars);
 
         System.out.println("__________");
-        System.out.println("Sorted by year and price: ");
-        Arrays.sort(cars, new ComparatorByYearAndPrice());
+        System.out.println("Sorted by price and year: ");
+        Arrays.sort(cars, new ComparatorByPriceAndYear());
         displayCars(cars);
     }
 
