@@ -19,7 +19,7 @@ public class StringBuilderIntro {
 
         //===============================================================
         long timeNow = System.currentTimeMillis();
-        System.out.println(timeNow);
+        //System.out.println(timeNow);
         int maxIterations = 1_000_000;
         long timeStamp = System.currentTimeMillis();
         concatUsingString(maxIterations);

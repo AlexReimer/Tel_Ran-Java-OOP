@@ -29,6 +29,10 @@ public class Book {
             this.pricePerPage = pricePerPage;
     }
 
+    public Book(String title, int countPages) {
+        this.title = title;
+        this.countPages = countPages;
+    }
 
     public long getIsbn() {
         return isbn;
