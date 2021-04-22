@@ -1,4 +1,7 @@
 package persons;
+
+import java.util.Objects;
+
 public class Person implements Comparable<Person>{
 
     private int birthYear;
@@ -43,6 +46,14 @@ public class Person implements Comparable<Person>{
         // if res !=0 return res
         int res = birthYear - o.birthYear;
         return res==0?name.compareTo(o.name):res;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return birthYear == person.birthYear && name.equals(person.name);
     }
 
 

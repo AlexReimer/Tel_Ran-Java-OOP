@@ -1,4 +1,4 @@
-package Model;
+package model;
 
 import interfaces.IList;
 import iterators.MyArrayIterator;
@@ -8,7 +8,6 @@ import java.util.Iterator;
 
 public class MyArray implements IList{
     private static final int INITIAL_SIZE = 16;
-    public Object[] MyAray;
     private Object[] array;
     private int size = 0;
 
@@ -26,7 +25,8 @@ public class MyArray implements IList{
 
     @Override
     public boolean add(Object obj) {
-        if (obj == null) return false;
+        if (obj == null)
+            return false;
         //проверь есть ли еще место, если нет, увелись на одлин
         if (array.length == size)
             //создает новый массив. переностит теду адементы из сторого

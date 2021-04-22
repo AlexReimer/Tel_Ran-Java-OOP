@@ -19,6 +19,7 @@ public class RangeIterator implements Iterable<Integer> {
 //        if (position <= range.getMax())
 //            return true;
 //        return false;
+    //return position <=range.getMax();
 //    }
 //
 //    @Override

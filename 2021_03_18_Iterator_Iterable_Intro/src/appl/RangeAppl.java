@@ -10,13 +10,14 @@ public class RangeAppl {
 
         Range range = new Range(min, max);
 
-        for(Integer x : range) {
+        for (Integer x : range) {
             System.out.println(x);
         }
 
-        RangeIterator ri = new RangeIterator(range);
-        while (ri.hasNext()) {
-            System.out.print(ri.next()+ " ");
-        }
+//        RangeIterator ri = new RangeIterator(range);
+//        while (ri.hasNext()) {
+//            System.out.print(ri.next()+ " ");
+//        }
+//    }
     }
 }

@@ -11,12 +11,12 @@ public class ArrayListIntr {
         list.add("Borka"); //добавление в колл. т сдвинь вправо boolean
         System.out.println(list.isEmpty());//провека коллекции на "пустоту" : boolean
         System.out.println(list.size());//
-        list.add(0,"Ryzhik"); //добавление в колл. т сдвинь вправо : НО void
+        list.add(0, "Ryzhik"); //добавление в колл. т сдвинь вправо : НО void
         System.out.println(list.isEmpty());
         System.out.println(list.size());
-        list.set(0,"Botja");//добавление эл.с удалением того, что было на этом мсете
+        list.set(0, "Botja");//добавление эл.с удалением того, что было на этом мсете
         System.out.println(list);
-        for (String c : list){
+        for (String c : list) {
             System.out.println(c);
             //вставить скнин шот с футпринт
         }
@@ -30,7 +30,7 @@ public class ArrayListIntr {
         temp.add("3");
         list.addAll(temp);//добавление в колл. несколькких элеинтов вконец
         System.out.println(list);
-        list.addAll(1,temp); //добавление в колл. несколькких элеинтов начиная с Индекса со сздвином вправо
+        list.addAll(1, temp); //добавление в колл. несколькких элеинтов начиная с Индекса со сздвином вправо
         System.out.println(list);
         list.remove(1);//удаление по индексу со сздвином влево
         System.out.println(list);
@@ -40,7 +40,7 @@ public class ArrayListIntr {
         System.out.println(list.isEmpty());
 
         ArrayList<Integer> list2 = new ArrayList<>();//create ArrayList
-       // list2.add("abc"); строку не доьавит ибо инт
+        // list2.add("abc"); строку не доьавит ибо инт
 
     }
 }

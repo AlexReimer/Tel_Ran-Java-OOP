@@ -7,43 +7,46 @@ public class ArrList_LinkList_ExecTimeCompare {
         ArrayList<Double> arrList = new ArrayList<>();
         LinkedList<Double> linList = new LinkedList<>();
 
+        int maxIterationsAL = 100_000;
+        int maxIterationsLL = 100_000;
         long timeNow = System.currentTimeMillis();
-        int maxIterations = 100_000;
         long timeStamp = System.currentTimeMillis();
 
 
         //fill the collection
-        while (maxIterations > 0) {
+        while (maxIterationsAL > 0) {
             arrList.add(Math.random());
-            maxIterations--;
+            maxIterationsAL--;
         }
-        System.out.println(arrList);
-        System.out.println("Time ArrayList: " + (System.currentTimeMillis() - timeStamp));
+      //  System.out.println(arrList);
+     //   System.out.println("Time ArrayList: " + (System.currentTimeMillis() - timeStamp));
 
 
-        while (maxIterations > 0) {
+        while (maxIterationsLL > 0) {
             linList.add(Math.random());
-            maxIterations--;
+            maxIterationsLL--;
         }
-        System.out.println(linList);
-        System.out.println("Time LinkedList: " + (System.currentTimeMillis() - timeStamp));
+      //  System.out.println(linList);
+      //  System.out.println("Time LinkedList: " + (System.currentTimeMillis() - timeStamp));
 
         System.out.println("------------------");
+
         //===============================================================
 
 
         //add to the beginning of the collection
-        while (maxIterations > 0) {
+        int maxIterationsAL1 = 100_000;
+        while (maxIterationsAL1 > 0) {
             arrList.add(0, 8282.0);
-            maxIterations--;
+            maxIterationsAL1--;
         }
-        System.out.println(arrList);
+       // System.out.println(arrList);
         System.out.println("Time ArrayList add to the beginning : " + (System.currentTimeMillis() - timeStamp));
 
-
-        while (maxIterations > 0) {
+        int maxIterationsLL1 = 100_000;
+        while (maxIterationsLL1 > 0) {
             linList.add(0, 8282.0);
-            maxIterations--;
+            maxIterationsLL1--;
         }
         // System.out.println(linList);
         System.out.println("Time LinkedList add to the beginning: " + (System.currentTimeMillis() - timeStamp));
@@ -54,15 +57,17 @@ public class ArrList_LinkList_ExecTimeCompare {
 
 
         //add to the middle of the collection
-        while (maxIterations > 0) {
+        int maxIterationsAL2 = 100_000;
+        while (maxIterationsAL2 > 0) {
             arrList.add(arrList.size() / 2, 9.0);
-            maxIterations--;
+            maxIterationsAL2--;
         }
         System.out.println("Time ArrayList add to the middle: " + (System.currentTimeMillis() - timeStamp));
 
-        while (maxIterations > 0) {
+        int maxIterationsLL2 = 100_000;
+        while (maxIterationsLL2 > 0) {
             linList.add(linList.size() / 2, 9.0);
-            maxIterations--;
+            maxIterationsLL2--;
         }
         System.out.println("Time LinkedList add to the middle: " + (System.currentTimeMillis() - timeStamp));
 
@@ -72,15 +77,17 @@ public class ArrList_LinkList_ExecTimeCompare {
 
 
         //remove from the beginning of the collection
-        while (maxIterations > 0) {
+        int maxIterationsAL3 = 100_000;
+        while (maxIterationsAL3 > 0) {
             arrList.remove(0);
-            maxIterations--;
+            maxIterationsAL3--;
         }
         System.out.println("Time ArrayList remove from the beginning: " + (System.currentTimeMillis() - timeStamp));
 
-        while (maxIterations > 0) {
+        int maxIterationsLL3 = 100_000;
+        while (maxIterationsLL3 > 0) {
             linList.remove(0);
-            maxIterations--;
+            maxIterationsLL3--;
         }
         // System.out.println(linList);
         System.out.println("Time LinkedList remove from the beginning: " + (System.currentTimeMillis() - timeStamp));
@@ -91,15 +98,17 @@ public class ArrList_LinkList_ExecTimeCompare {
 
 
         //remove from the middle of the collection
-        while (maxIterations > 0) {
+        int maxIterationsAL4 = 100_000;
+        while (maxIterationsAL4 > 0) {
             arrList.remove(arrList.size()/2);
-            maxIterations--;
+            maxIterationsAL4--;
         }
         System.out.println("Time ArrayList remove from the middle: " + (System.currentTimeMillis() - timeStamp));
 
-        while (maxIterations > 0) {
+        int maxIterationsLL4 = 100_000;
+        while (maxIterationsLL4 > 0) {
             linList.remove(arrList.size()/2);
-            maxIterations--;
+            maxIterationsLL4--;
         }
         // System.out.println(linList);
         System.out.println("Time LinkedList remove from the middle: " + (System.currentTimeMillis() - timeStamp));
@@ -108,15 +117,17 @@ public class ArrList_LinkList_ExecTimeCompare {
         //===============================================================
 
         //remove from the end of the collection
-        while (maxIterations > 0) {
+        int maxIterationsAL5 = 100_000;
+        while (maxIterationsAL5 > 0) {
             arrList.remove(arrList.size()-1);
-            maxIterations--;
+            maxIterationsAL5--;
         }
         System.out.println("Time ArrayList remove from the end: " + (System.currentTimeMillis() - timeStamp));
 
-        while (maxIterations > 0) {
+        int maxIterationsLL5 = 100_000;
+        while (maxIterationsLL5 > 0) {
             linList.remove(arrList.size()-1);
-            maxIterations--;
+            maxIterationsLL5--;
         }
         // System.out.println(linList);
         System.out.println("Time LinkedList remove from the end: " + (System.currentTimeMillis() - timeStamp));
